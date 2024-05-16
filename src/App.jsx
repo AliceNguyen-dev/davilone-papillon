@@ -5,6 +5,8 @@ import React from "react";
 // components
 import Navbar from "./components/Navbar"
 
+import ListProduct from './components/ListProduct';
+
 function App() {
 
   return (
@@ -28,7 +30,8 @@ function App() {
       </div>
 
       <div className="h-list-products">
-
+      <h1>Liste des produits</h1>
+      <ListProduct />
       </div>
 
       <div className="h-footer">

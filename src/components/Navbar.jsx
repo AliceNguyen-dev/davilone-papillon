@@ -1,6 +1,9 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+
 import "./Navbar.scss"
+
+// import ListProduct from "./ListProduct";
 
 import logo from "../assets/img/Davillone.png"
 
@@ -23,8 +26,8 @@ const Navbar = () => {
         <img src={logo} alt="Logo" className="logo-name" />
       </div>
 			<nav ref={navRef}>
-				<a href="/#">Accueil</a>
-				<a href="/#">Nos Produits</a>
+				<a href="/">Accueil</a>
+				<a href="">Nos Produits</a>
 				<a href="/#">Blog</a>
 				<a href="/#">Contact</a>
 				<a href="/#">Compte</a>
