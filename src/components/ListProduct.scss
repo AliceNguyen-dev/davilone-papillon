@@ -1,0 +1,9 @@
+img{
+    width: 160px;
+    height: 200px;
+}
+.product-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+}

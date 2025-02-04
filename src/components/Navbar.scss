@@ -13,44 +13,76 @@
   --textColorResp: #FFBD59;
 }
 
-header {
+
+
+@media only screen and (max-width: 1600px) {
+
+
+/* Style pour le menu visible en desktop */
+.menuVisible {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
-  padding: 0 2rem;
-  color: black;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  gap: 20px; /* Espacement entre les liens */
+  margin: auto;
 }
 
-nav a {
-  margin: 0 1rem;
-  color: var(--textColor);
+/* Style pour le menu burger en mobile */
+.burgerVisible {
+  display: none; /* Cache le menu burger par défaut en desktop */
+  
+  }
+
+.NavItems{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   text-decoration: none;
+  color: #171920;
+  font-size: 15px;
+  margin: 10px;
+  text-transform: uppercase;
 }
 
-nav a:hover {
-  color: var(--secondaryColor);
-}
 
-header .nav-btn {
-  padding: 5px;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: var(--mainColor);
-  visibility: hidden;
-  opacity: 0;
-  font-size: 1.8rem;
-}
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    color: black;
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    color: var(--textColor);
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: var(--secondaryColor);
+  }
+  
+  header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--mainColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+  }
+  
+  .burger-button {
+    display: none;
+  }
 
-header div,
-nav {
-  display: flex;
-  align-items: center;
-}
 
-@media only screen and (max-width: 1024px) {
+
+
 
   header .nav-btn {
     visibility: visible;
@@ -87,4 +119,16 @@ nav {
   }
 
 
+}
+
+
+/* Media query pour les écrans de moins de 740px de large */
+@media (max-width: 740px) {
+  .menuVisible {
+    display: none; /* Cache le menu desktop en mobile */
+  }
+
+  .burgerVisible {
+    display: block; /* Affiche le menu burger en mobile */
+  }
 }

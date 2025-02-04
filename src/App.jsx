@@ -1,42 +1,44 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import React from "react";
 
 
-// components
-import Navbar from "./components/Navbar"
+// Components
+import Navbar from './components/Navbar';
+import Home from './components/Home'
+import ListProduct from './components/Blog';
+import Product from './components/Product';
+import User from './components/User/User';
+import Blog from './components/Blog';
+import Contact from './components/Contact';
 
-import ListProduct from './components/ListProduct';
+import Login from './components/User/Login'; // Chemin correct vers Login.jsx
+import Register from './components/User/Register'; // Chemin correct vers Register.jsx
+
 
 function App() {
 
   return (
     <div className="App-header">
       
+      <Navbar /> 
       <div className="h-nav">
-        <div className="navbar-brand"></div>
-        {/* Navbar */}
-          <React.Fragment>
-            <Navbar/>
-          </React.Fragment>
+        <div className="box-app">
+          <Routes>
+            <Route path="/" element={<Home />} /> {/* Définissez votre page d'accueil */}
+            <Route path="/product" element={<Product />} />
+            <Route path="/listProduct" element={<ListProduct />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/user" element={<User />} />
 
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+
+          </Routes>
+        </div>
       </div>
 
-      <div className="h-logo">
-        
-      </div>
-
-      <div className="h-slide">
-        {/* slide promos */}
-      </div>
-
-      <div className="h-list-products">
-      <h1>Liste des produits</h1>
-      <ListProduct />
-      </div>
-
-      <div className="h-footer">
-        {/* footer */}
-      </div>
     </div>
   );
 }
