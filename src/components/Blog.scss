@@ -31,3 +31,133 @@
     color: #B76E79;
     font-weight: 300
 }
+
+.d-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  
+  .d--log {
+    margin-bottom: 20px;
+  }
+  
+  .d-log-ic {
+    width: 200px;
+  }
+  
+  .d-blog-int {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  
+  .tit-blog {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .blog-d-title {
+    font-weight: bold;
+  }
+  
+  .d-tab-art1 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .-add-box-art {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .-add-box-art input,
+  .-add-box-art textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .-add-box-art button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .d-art-card {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .art-d-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .--box-art-blog {
+    padding: 10px;
+  }
+  
+  .user-art {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .--desc-box {
+    white-space: pre-wrap;
+  }
+
+  .tit-blog { /* Ou le sélecteur CSS de votre titre */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    overflow: hidden; /* Masque le texte qui dépasse */
+    text-overflow: ellipsis; /* Ajoute des points de suspension si le texte est tronqué */
+  }
+
+  .bann--tab-index{
+    height: 200px;
+  }
+
+
+  .user-dashboard {
+    display: flex;
+    flex-direction: column; /* Assure que les éléments sont en colonne */
+    min-height: 100vh; /* Pour que le conteneur occupe toute la hauteur de l'écran */
+  }
+  
+  .banner-container {
+    width: 100%; /* La bannière occupe toute la largeur */
+    margin-bottom: 20px; /* Espacement entre la bannière et le contenu */
+    overflow: hidden; /* Pour gérer les images trop grandes */
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: auto; /* La hauteur s'ajuste à la largeur */
+    display: block; /* Empêche l'image de créer un espace vertical indésirable */
+  }
+  
+  .auth-container {
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    flex-grow: 1; /* Permet au contenu de grandir pour remplir l'espace disponible */
+  }
+  
+  .auth-box {
+    /* Styles pour la boîte d'authentification */
+    /* ... */
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px; /* Espacement entre les boutons */
+  }

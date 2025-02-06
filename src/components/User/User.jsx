@@ -3,6 +3,7 @@ import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import Register from './Register';
 import Login from './Login';
 import { Button } from 'react-bootstrap';
+import BanniP from '../../assets/img/banni-p.jpeg'
 
 import './User.scss'
 
@@ -21,7 +22,9 @@ const User = () => {
 
   return (
     <div className="user-dashboard">
-
+        <div className="--bann-tab-dash">
+          <img src={BanniP} alt="bannip" className="bann--tab-index" />
+        </div>
       <div className="auth-container">
         {!isLoggedIn ? (
           <div className='box-register'>
