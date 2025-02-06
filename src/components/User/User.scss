@@ -1,64 +1,130 @@
 // Format Desktop
-.user-dashboard{
-    width: 60%;
-    height: 250px;
-    background-color: #FCE7C8;
-    border-radius: 5px;
-    margin: auto;
+.user-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  background-color: #f8f9fa;
 }
+
+.auth-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 95%;
+}
+
+.box-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-tab {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #343a40;
+}
+
+.intro-div {
+  margin-bottom: 20px;
+}
+
+.auth-options {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
 .box-btn-tab {
   display: flex;
-  flex-direction: column; // Pour superposer les boutons
-  align-items: center; // Pour centrer horizontalement
-  gap: 10px; // Espacement entre les boutons
-  width: 100%;
-  margin-top: 20px;
+  gap: 10px;
+  justify-content: center;
 }
 
-.input-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.auth-options button {
-  border-radius: 5px;
+.btn {
   padding: 10px 20px;
-  width: 200px;
-  text-align: center;
-}
-
-.auth-options button:first-child {
-  background-image: linear-gradient(to bottom, #F5F5DC, #D2B48C);
-  border: none; /* Supprime la bordure par défaut du bouton */
-  color: #A0522D; /* Couleur du texte marron */
+  border-radius: 5px;
+  font-size: 1em;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase; /* Texte en majuscules */
 }
 
-.auth-options button:last-child {
-  background-image: linear-gradient(to bottom, #F5F5DC, #D2B48C);
-  border: none; /* Supprime la bordure par défaut du bouton */
-  color: #A0522D; /* Couleur du texte marron */
-  cursor: pointer;
+.btn-contained {
+  background-color: #2196f3; /* Bleu Material UI */
+  color: white;
+  border: none;
 }
 
-.button-container {
+.btn-contained:hover {
+  background-color: #1976d2; /* Bleu plus foncé au survol */
+}
+
+.btn-outlined {
+  background-color: transparent;
+  color: #2196f3; /* Bleu Material UI */
+  border: 1px solid #2196f3;
+}
+
+.btn-outlined:hover {
+  background-color: #e3f2fd; /* Bleu clair au survol */
+  color: #1976d2;
+  border-color: #1976d2;
+}
+
+// Styles pour les formulaires Login et Register (si besoin)
+.auth-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center; /* Centre verticalement */
-  height: 50vh; /* Ajustez la hauteur selon vos besoins */
-  margin: auto; /* Centre horizontalement le conteneur */
+  gap: 15px;
 }
 
-.title-tab{
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 20px;
+.auth-form input {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.auth-form input:focus {
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.25); /* Bleu Material UI au focus */
+}
+
+.dashboard-options {
   text-align: center;
-  padding: 15px;
+}
+
+.dashboard-options button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase; /* Texte en majuscules */
+}
+
+.dashboard-options button:hover {
+  background-color: #c82333;
+}
+.title-tab {
+  font-size: 20px; /* Taille de police de 20px */
+  text-transform: uppercase; /* Texte en majuscules */
+  font-weight: 300; /* Police fine (light) */
+  /* Si la police ne s'éclaircit pas assez avec 300, essayez des valeurs inférieures (200, 100) */
+  color: #343a40;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 

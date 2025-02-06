@@ -1,0 +1,161 @@
+//  Format Desktop
+@media (max-width: 1600px) {
+    .box-cont-1{
+        padding-top: 20px;
+
+        .tab-ct-grid{
+
+
+            .tab-box--1{
+                font-family: Playfair Display;
+                font-size: 20px;
+                text-align: center;
+
+
+                
+                
+
+
+                .tab-cont-h{
+                    font-family: Playfair Display;
+                    font-size: 20px;
+                    text-align: center;
+                } // tab-cont-h
+
+
+
+
+
+            } //tab-box--1
+
+            .box-chmp-tab{
+                width: 60%;
+                height: 300px;
+                background-color: #E1EACD;
+                margin: 10px auto;
+            }
+
+
+
+
+        } // tab-ct-grid
+
+
+        .tab-cont-h{
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            text-decoration: none;
+            color: #171920;
+            font-size: 25px;
+            margin: 10px;
+            text-transform: uppercase;
+            text-align: center;
+        } // tab-cont-h
+
+
+        .box-chmp-tab{
+            width: 60%;
+            height: 350px;
+            margin: 10px auto;
+        }
+
+
+        .box-cont-1 {
+            display: flex;
+            flex-direction: column; // Assure que les éléments sont en colonne
+            align-items: center; // Centre horizontalement le contenu
+            padding: 20px; // Ajoute un peu d'espace autour du contenu
+          }
+          
+          .tab-ct-grid {
+            // Styles pour la bannière contact (si besoin)
+            width: 100%; // Occupe toute la largeur disponible
+            margin-bottom: 20px; // Ajoute un espace en dessous de la bannière
+          }
+          
+          .tab-box--1 {
+            text-align: center; // Centre le texte du titre
+            margin-bottom: 20px;
+          }
+          
+          .tab-cont-h {
+            font-size: 1.5em; // Ajuster la taille du titre
+            margin-bottom: 10px;
+          }
+          
+          .box-chmp-tab {
+            width: 100%; // Le formulaire occupe toute la largeur du conteneur
+            max-width: 500px; // Limite la largeur maximale du formulaire (pour les grands écrans)
+            margin: 0 auto; // Centre le formulaire horizontalement
+          }
+          
+          .emailForm {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; // Espacement entre les champs
+            padding: 20px;
+            border-radius: 8px; // Bords arrondis
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Ombre légère
+            background-color: #e3f2fd; // Couleur de fond bleu clair (Material UI Form)
+          }
+          
+          .form-outline {
+            width: 100%;
+          }
+          
+          .tab-info input,
+          .tab-info textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da; // Bordure légère
+            border-radius: 4px;
+            box-sizing: border-box; // Pour que le padding n'affecte pas la largeur totale
+            font-size: 1em;
+          }
+          
+          .tab-info input:focus,
+          .tab-info textarea:focus {
+            border-color: #80bdff; // Bordure bleue au focus
+            outline: none;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); // Ombre bleue au focus
+          }
+          
+          .btn-contact {
+            text-transform: uppercase; /* Texte en majuscules */
+            color: #007bff; /* Couleur du texte bleue (Bootstrap primary color) */
+            background-color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+          }
+          
+          .btn-contact:hover {
+            background-color: #f0f0f0;
+          }
+          
+          .tab-info input,
+          .tab-info textarea {
+            font-family: 'Playfair Display', serif; /* Police Playfair Display */
+            font-size: 16px; /* Taille de police 16px */
+          }
+          
+          .d-flex{
+            text-align: center;
+          }
+
+
+    } // box-cont-1
+    
+}
+    
+    
+    //  Format Mobile
+    @media (max-width: 740px) {
+        .box-chmp-tab {
+            max-width: 95%;
+          }
+    }

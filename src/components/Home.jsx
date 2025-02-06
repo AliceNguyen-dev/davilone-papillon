@@ -1,10 +1,16 @@
 import React from 'react';
+import BanniDavi from '../assets/img/banni-home.png'
+
+import './Home.scss'
 
 function Home() {
   return (
     <div>
-      <h1>Home</h1>
-      <p>ICI Page d'accueil</p>
+      <div className="ban-h-div">
+        <div className="-ban-h-tab">
+          <img className='banni-h-1' src={BanniDavi} alt="banni-h" />
+        </div>
+      </div>
     </div>
   );
 }

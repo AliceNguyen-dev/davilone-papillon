@@ -11,6 +11,7 @@ import Product from './components/Product';
 import User from './components/User/User';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
+import Footer from './components/Footer'
 
 import Login from './components/User/Login'; // Chemin correct vers Login.jsx
 import Register from './components/User/Register'; // Chemin correct vers Register.jsx
@@ -37,6 +38,9 @@ function App() {
 
           </Routes>
         </div>
+
+        <Footer></Footer>
+
       </div>
 
     </div>
