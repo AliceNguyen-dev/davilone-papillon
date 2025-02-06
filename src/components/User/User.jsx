@@ -3,7 +3,7 @@ import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import Register from './Register';
 import Login from './Login';
 import { Button } from 'react-bootstrap';
-import BanniP from '../../assets/img/banni-p.jpeg'
+import BanniP from '../../assets/img/banni-p.png'
 
 import './User.scss'
 

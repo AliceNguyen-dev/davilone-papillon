@@ -161,3 +161,73 @@
     display: flex;
     gap: 10px; /* Espacement entre les boutons */
   }
+
+  .tit-blog {
+    font-family: 'Playfair Display', serif; /* Police pour le titre */
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .blog-d-title {
+    /* Styles pour la partie "Blog" du titre */
+  }
+  
+  .d-tab-art1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .-add-box-art {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .-add-box-art input,
+  .-add-box-art textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .-add-box-art button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .d-art-card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .art-d-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .--box-art-blog {
+    flex: 1;
+  }
+  
+  .user-art {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
