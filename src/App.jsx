@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home'
 import ListProduct from './components/Blog';
 import Product from './components/Product';
+import ProductDetails from './components/ProductDetails'
 import User from './components/User/User';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
@@ -26,9 +27,9 @@ function App() {
       <div className="h-nav">
         <div className="box-app">
           <Routes>
-            <Route path="/" element={<Home />} /> {/* Définissez votre page d'accueil */}
-            <Route path="/product" element={<Product />} />
-            <Route path="/listProduct" element={<ListProduct />} />
+            <Route path="/" element={<Home />} />
+            {/* Route paramétrée pour les détails du produit */}
+            <Route path="/product/:id" element={<ProductDetails />} /> 
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/user" element={<User />} />
