@@ -82,14 +82,6 @@
     border-radius: 5px;
   }
   
-  .-add-box-art button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
   
   .d-art-card {
     margin-bottom: 20px;
@@ -199,14 +191,7 @@
     border-radius: 5px;
   }
   
-  .-add-box-art button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+
   
   .d-art-card {
     display: flex;
@@ -246,9 +231,7 @@
     margin-bottom: 20px;
   }
   
-  .blog-d-title {
-    /* Styles pour la partie "Blog" du titre */
-  }
+
   
   .d-tab-art1 {
     display: flex;
@@ -276,11 +259,20 @@
   
   .-add-box-art button {
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    background: linear-gradient(to right, #F2D7D9, #B76E79, #A7C7E7); /* Dégradé de couleurs */
+    color: #fff; /* Couleur du texte blanche pour contraste */
+    font-weight: bold; /* Texte en gras pour plus de visibilité */
+    transition: background-color 0.3s ease; /* Transition douce au survol */
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: auto;
+  }
+  
+  .-add-box-art button:hover {
+    background: linear-gradient(to right, #e9c4c6, #a15a65, #90b2d1); /* Dégradé légèrement plus foncé au survol */
   }
   
   .d-art-card {

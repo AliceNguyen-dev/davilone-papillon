@@ -97,7 +97,8 @@
           padding: 20px;
           border-radius: 8px; // Bords arrondis
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Ombre légère
-          background-color: #e3f2fd; // Couleur de fond bleu clair (Material UI Form)
+          // background-color: #e3f2fd; // Couleur de fond bleu clair (Material UI Form)
+          background: linear-gradient(to right, #F2D7D9, #B76E79, #A7C7E7);
         }
         
         .form-outline {
@@ -123,7 +124,7 @@
         
         .btn-contact {
           text-transform: uppercase; /* Texte en majuscules */
-          color: #007bff; /* Couleur du texte bleue (Bootstrap primary color) */
+          color: linear-gradient(to right, #e9c4c6, #a15a65, #90b2d1);; /* Couleur du texte bleue (Bootstrap primary color) */
           background-color: white;
           border: none;
           padding: 10px 20px;
@@ -131,10 +132,12 @@
           cursor: pointer;
           font-size: 1em;
           transition: background-color 0.3s ease;
+          font-family: auto;
         }
         
         .btn-contact:hover {
-          background-color: #f0f0f0;
+          background: linear-gradient(to right, #e9c4c6, #a15a65, #90b2d1); /* Dégradé légèrement plus foncé au survol */
+          color: white;
         }
         
         .tab-info input,

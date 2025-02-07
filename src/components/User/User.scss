@@ -57,25 +57,25 @@
 }
 
 .btn-contained {
-  background-color: #2196f3; /* Bleu Material UI */
+  background: linear-gradient(to right, #e9c4c6, #a15a65, #90b2d1);
   color: white;
   border: none;
 }
 
 .btn-contained:hover {
-  background-color: #1976d2; /* Bleu plus foncé au survol */
+  background: linear-gradient(to right, #e9c4c6, #a15a65, #90b2d1); /* Dégradé légèrement plus foncé au survol */
+  color: white;
 }
-
 .btn-outlined {
   background-color: transparent;
-  color: #2196f3; /* Bleu Material UI */
-  border: 1px solid #2196f3;
+  color: linear-gradient(to right, #e9c4c6, #a15a65, #90b2d1);; /* Bleu Material UI */
+  border: 1px solid linear-gradient(to right, #e9c4c6, #a15a65, #90b2d1);;
 }
 
 .btn-outlined:hover {
   background-color: #e3f2fd; /* Bleu clair au survol */
-  color: #1976d2;
-  border-color: #1976d2;
+  color: linear-gradient(to right, #e9c4c6, #a15a65, #90b2d1);;
+  border-color: linear-gradient(to right, #e9c4c6, #a15a65, #90b2d1);;
 }
 
 // Styles pour les formulaires Login et Register (si besoin)

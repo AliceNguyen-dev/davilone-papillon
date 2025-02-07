@@ -1,0 +1,379 @@
+/* Media Queries */
+
+  @media (min-width: 741px) and (max-width: 1600px) { /* Tablette et Desktop */
+    .register-form {
+      max-width: 900px;
+    }
+
+    /* Styles pour les erreurs */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .error-messages {
+    margin-top: 20px;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .error-messages p {
+    margin: 0;
+    color: red;
+  }
+
+  .submit-button {
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #6B8E23, #A0522D);
+    color: white; /* Couleur du texte */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Styles pour les deux colonnes */
+  .two-columns {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .two-columns > div {
+    flex: 1;
+  }
+  
+  /* Styles pour les labels et inputs */
+  .register-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .register-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; /* Centre le formulaire horizontalement */
+    padding: 50px;
+    border: 1px solid #ccc; /* Ajoute une bordure */
+    border-radius: 5px; /* Arrondit les angles */
+  }
+  
+  .two-columns {
+    display: flex;
+    gap: 65px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .two-columns > div {
+    flex: 1;
+  }
+  
+  .register-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .register-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .register-form button {
+    padding: 10px 20px;
+    background: white;
+    color: #C890A7;
+    font-weight: bold; /* Texte en gras pour plus de visibilité */
+    transition: background-color 0.3s ease; /* Transition douce au survol */
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: auto;
+    border: 100;
+    border-radius: 4px;
+    border-color: #C890A7;
+    cursor: pointer;
+    width: 100%;
+    font-family: auto;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .error-messages {
+    margin-top: 20px;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .error-messages p {
+    margin: 0;
+    color: red;
+  }
+
+  .boxReg{
+    margin-top: 150px;
+  }
+
+  .register-container {
+    display: flex; /* Active Flexbox pour le conteneur */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    min-height: 100vh !important; /* Assure que le conteneur occupe toute la hauteur de l'écran */
+  }
+  .register-form label,
+  .register-form input {
+    margin-bottom: 10px; /* Ajustez la valeur selon vos besoins */
+  }
+
+
+
+  }
+
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none; 
+    border: none; 
+    color: #c890a7; 
+    cursor: pointer; 
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px; 
+    transition: all 0.3s ease;
+  }
+  
+  .back-button:hover {
+    opacity: 0.7; /* Opacité au survol */
+  }
+
+  .back-btn-{
+    position: absolute; /* Pour le positionner en haut à gauche */
+    top: 20px; /* Ajustez la position verticale */
+    left: 20px; /* Ajustez la position horizontale */
+  }
+  
+  /* Styles pour le bouton "Retour" */
+  .back-button {
+    background: none; /* Fond transparent */
+    border: none; /* Pas de bordure */
+    color: #c890a7; /* Couleur du texte */
+    cursor: pointer; /* Curseur de la souris au survol */
+    font-size: 16px; /* Taille de la police */
+    padding: 5px 10px; /* Marge intérieure */
+    border-radius: 5px; /* Bord arrondi */
+    transition: all 0.3s ease; /* Transition pour un effet visuel */
+  }
+  
+  .back-button:hover {
+    opacity: 0.7; /* Opacité au survol */
+  }
+
+@media (max-width: 740px) { /* Mobile */
+
+  .register-form {
+    max-width: 75%;
+  }
+
+
+  /* Styles pour les erreurs */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.error-messages {
+  margin-top: 20px;
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.error-messages p {
+  margin: 0;
+  color: red;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, #6B8E23, #A0522D);
+  color: white; /* Couleur du texte */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Styles pour les deux colonnes */
+.two-columns {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.two-columns > div {
+  flex: 1;
+}
+
+/* Styles pour les labels et inputs */
+.register-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; /* Centre le formulaire horizontalement */
+  padding: 20px;
+  border: 1px solid #ccc; /* Ajoute une bordure */
+  border-radius: 5px; /* Arrondit les angles */
+}
+
+.two-columns {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.two-columns > div {
+  flex: 1;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.register-form button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #F2D7D9, #B76E79, #A7C7E7); /* Dégradé de couleurs */
+  color: #fff; /* Couleur du texte blanche pour contraste */
+  font-weight: bold; /* Texte en gras pour plus de visibilité */
+  transition: background-color 0.3s ease; /* Transition douce au survol */
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-family: auto;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.error-messages {
+  margin-top: 20px;
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.error-messages p {
+  margin: 0;
+  color: red;
+}
+
+.boxReg{
+  margin-top: 150px;
+}
+
+.register-container {
+  display: flex; /* Active Flexbox pour le conteneur */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  min-height: 100vh !important; /* Assure que le conteneur occupe toute la hauteur de l'écran */
+}
+
+
+
+
+  .two-columns {
+    flex-direction: column; 
+    gap: 10px;
+  }
+  /* Styles pour les erreurs */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .error-messages {
+    margin-top: 20px;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .error-messages p {
+    margin: 0;
+    color: red;
+  }
+
+  .submit-button {
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #6B8E23, #A0522D);
+    color: white; /* Couleur du texte */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
+
